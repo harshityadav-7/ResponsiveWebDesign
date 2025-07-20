@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<main>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <title>Survey Form</title>
+</main>
+<body>
+  <h1 id="title">Student Feedback Survey</h1>
+  <p id="description">Please help us improve by filling out this short survey</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Full Name:</label>
+    <input id="name" name="name" type="text" placeholder="Enter your full name" required/>
+    <label id="email-label" for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email:" required />
+    <label id="number-label" for="number">Enter your age:</label>
+    <input type="number" id="number" name="number" placeholder="18" min="10" max="99" required/>
+    <label for="dropdown">Your role:</label>
+    <select id="dropdown" name="role">
+      <option value="student">Student</option>
+      <option value=professional>Professional</option>
+    </select>
+    <p>Would you recommend us?</p>
+      <label>
+        <input type="radio" name="recommend" value="yes"/>Yes 
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="no"/>No
+      </label>
+      <p>What do you like? (Select all that apply)</p>
+      <label>
+        <input type="checkbox" name="likes" value="design"/>Design
+      </label>
+      <label>
+        <input type="checkbox" name="likes" value="content"/>Content
+      </label>
+      <label>
+        <input type="checkbox" name="likes" value="features"/>Features
+      </label>
+      <p>Any comment?</p>
+      <textarea name="comments" placeholder="Write you thoughts here..." rows="5" cols="30"></textarea>
+      <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>

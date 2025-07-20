@@ -1,0 +1,76 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  padding:20px;
+  background:linear-gradient(180deg, #d4fc79, #96e6a1);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+form{
+  background-color:white;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  width:100%;
+  max-width:600px;
+}
+#title{
+  text-align:center;
+  font-size:2rem;
+  margin-bottom:10px;
+  color:#333;
+}
+#description{
+  text-align:center;
+  font-size:1rem;
+  margin-bottom:30px;
+  color:#666;
+}
+label{
+  display:block;
+  margin:10px 0 5px;
+  font-width:500;
+  color:#444;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea{
+  width:100%;
+  padding:10px;
+  margin-bottom:15px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  font-size:1rem;
+}
+input[type="radio"],
+input[type="checkboc"]{
+  margin-right:8px;
+}
+p{
+  font-weight:600;
+  margin-top:20px;
+  margin-bottom:5px;
+  color:#333;
+}
+#submit{
+  background-color:#4CAF50;
+  color:white;
+  padding:12px 20px;
+  border:none;
+  border-radius:8px;
+  font-size:1rem;
+  cursor:pointer;
+  transition:background 0.3 ease;
+  display:block;
+  margin:20px auto 0;
+}
+#submit:hover{
+  background-color:#45a049;
+}
