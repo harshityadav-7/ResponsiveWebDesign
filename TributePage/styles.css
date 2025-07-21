@@ -1,0 +1,49 @@
+#image{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin:0 auto;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+#main {
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#img-caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+#tribute-link {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+#tribute-link:hover {
+  text-decoration: underline;
+}
+#tribute-info {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
