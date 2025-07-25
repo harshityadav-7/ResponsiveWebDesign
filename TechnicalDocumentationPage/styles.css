@@ -1,56 +1,71 @@
-body{
-  font-family:Arial,sans-serif;
-  margin:0;
-  padding:0;
-  display:flex;
+/* Base body styles for layout and typography */
+body {
+  font-family: Arial, sans-serif; /* Clean sans-serif font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Flex layout for sidebar and content */
 }
-#navbar{
-  width:250px;
-  background-color:#f8f8f8;
-  padding:20px;
-  position:fixed;
-  height:100%;
-  overflow-y:auto;
-  border-right:1px solid #ccc;
+
+/* Navbar/sidebar styling */
+#navbar {
+  width: 250px; /* Fixed width for sidebar */
+  background-color: #f8f8f8; /* Light background */
+  padding: 20px; /* Inner spacing */
+  position: fixed; /* Sticks to left side of screen */
+  height: 100%; /* Full vertical height */
+  overflow-y: auto; /* Scroll if content overflows */
+  border-right: 1px solid #ccc; /* Subtle border */
 }
-#navbar header{
-  font-size:1.5em;
-  margin-bottom:20px;
+
+/* Header inside the navbar */
+#navbar header {
+  font-size: 1.5em; /* Larger title text */
+  margin-bottom: 20px; /* Space below heading */
 }
-.nav-link{
-  display:block;
-  margin-bottom:10px;
-  color:#0077cc;
-  text-decoration:none;
+
+/* Link styles in sidebar */
+.nav-link {
+  display: block; /* Full-width clickable block */
+  margin-bottom: 10px; /* Spacing between links */
+  color: #0077cc; /* Blue link color */
+  text-decoration: none; /* Remove underline */
 }
-.nav-link:hover{
-  text-decoration:underline;
+
+/* Hover effect for nav links */
+.nav-link:hover {
+  text-decoration: underline; /* Underline on hover */
 }
-#main-doc{
-  padding:20px;
-  margin-left:270px;
+
+/* Main documentation content area */
+#main-doc {
+  padding: 20px; /* Inner spacing */
+  margin-left: 270px; /* Space to accommodate fixed sidebar */
 }
-code{
-  background-color:#eee;
-  padding:2px 4px;
-  border-radius:4px;
-  display:block;
-  margin:10px 0;
+
+/* Inline code block styling */
+code {
+  background-color: #eee; /* Light grey background */
+  padding: 2px 4px; /* Padding around code */
+  border-radius: 4px; /* Slightly rounded corners */
+  display: block; /* Block-level for better formatting */
+  margin: 10px 0; /* Vertical spacing */
 }
+
+/* Responsive layout for smaller screens */
 @media (max-width: 768px) {
   body {
-    flex-direction: column;
+    flex-direction: column; /* Stack elements vertically */
   }
 
   #navbar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    border-right: none;
-    border-bottom: 1px solid #ccc;
+    position: relative; /* No longer fixed */
+    width: 100%; /* Full width */
+    height: auto; /* Let content determine height */
+    border-right: none; /* Remove side border */
+    border-bottom: 1px solid #ccc; /* Add bottom border */
   }
 
   #main-doc {
-    margin-left: 0;
+    margin-left: 0; /* Remove left margin */
   }
 }
